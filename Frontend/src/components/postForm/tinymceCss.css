@@ -1,0 +1,26 @@
+@layer components {
+    .specific-page h1 {
+      font-size: 2.25rem; /* equiv to text-4xl */
+      font-weight: 700; /* equiv to font-bold */
+    }
+    .specific-page h2 {
+      font-size: 1.875rem; /* equiv to text-3xl */
+      font-weight: 600; /* equiv to font-semibold */
+    }
+    .specific-page h3 {
+      font-size: 1.5rem; /* equiv to text-2xl */
+      font-weight: 500; /* equiv to font-medium */
+    }
+    .specific-page h4 {
+      font-size: 1.25rem; /* equiv to text-xl */
+      font-weight: 500; /* equiv to font-medium */
+    }
+    .specific-page h5 {
+      font-size: 1.125rem; /* equiv to text-lg */
+      font-weight: 500; /* equiv to font-medium */
+    }
+    .specific-page h6 {
+      font-size: 1rem; /* equiv to text-base */
+      font-weight: 500; /* equiv to font-medium */
+    }
+  }

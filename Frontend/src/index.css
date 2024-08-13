@@ -1,0 +1,385 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  
+  background-color: #f5f5f7;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #121212;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #d2d2d2;
+}
+
+.scrollb::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollb::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #d2d2d2;
+  
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@media screen and (min-width: 360px) and (min-height: 740px) {
+  .margin {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 375px) and (min-height: 667px) {
+  .margin {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .paddingtopp {
+    padding-top: 0rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 800px) {
+  .margint {
+    margin-top: 1.5rem;
+  }
+  .marginp {
+    padding-top: 1.5rem;
+    margin-bottom: 19%;
+  }
+  .propertycard {
+    width: 43%;
+    padding-top: 3.5rem;
+  }
+
+  .paddingtopp {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .ptop {
+    margin-top: -6rem !important;
+  }
+}
+
+@media screen and (min-width: 688px) and (min-height: 1031px) {
+  .margintop {
+    margin-top: 15px;
+  }
+  .ptop {
+    margin-top: 8rem;
+  }
+  .mmargin {
+    margin-top: 0rem !important;
+  }
+  .matp {
+    margin-top: 1rem !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 800px) {
+  .paddingtopp {
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+  }
+  .mmargin {
+    margin-top: 14rem !important;
+  }
+  .matpty {
+    margin-top: 1rem !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1069px) {
+  .ptop {
+    padding-top: 3rem;
+  }
+  .workswidth {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1032px) and (min-height: 1366px) {
+  .paddingtopp {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+  }
+  .ptop {
+    padding-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+  .paddingtopp {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+  }
+  .mmargin {
+    margin-top: 15rem !important;
+  }
+  .matpty {
+    margin-top: 0rem !important;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-height: 950px) {
+  .mmargin {
+    margin-top: 13rem !important;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .propertycard {
+    width: 31%;
+  }
+  .workswidth {
+    width: 74% !important;
+  }
+  .ptop {
+    padding-top: 0rem;
+  }
+  .paddingtopp {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+  }
+
+}
+
+@media screen and (min-width: 2560px) {
+  .propertycard {
+    width: 22%;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-height: 900px) {
+  .ptop {
+    margin-top: -10rem !important;
+  }
+  .paddingtopp {
+    padding-top: 0rem;
+    padding-bottom: 4rem;
+  }
+  .mmargin {
+    margin-top: 3rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height: 858px) {
+  .ptop {
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  .ptop {
+    padding-top: 3rem;
+  }
+
+  .mmargin {
+    margin-top: 1rem !important;
+  }
+  .emargin {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (min-height: 1280px) {
+  .ptop {
+    padding-top: 3rem;
+  }
+  .mmargin {
+    margin-top: -4rem !important;
+  }
+  .emargin {
+    margin-left: 5.5rem !important;
+  }
+}
+
+@media screen and (min-width: 834px) and (min-height: 1112px) {
+  .ptop {
+    padding-top: 4rem !important;
+  }
+  .paddingtopp {
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+  }
+  .mmargin {
+    margin-top: -5rem !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+  .ptop {
+    padding-top: 4rem !important;
+  }
+  .paddingtopp {
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+  }
+  .tabmargin {
+    margin-top: 4rem !important;
+  }
+  .tabm {
+    margin-top: 3rem !important;
+  }
+  .pmargin {
+    margin-top: -3rem !important;
+  }
+  .mmargin {
+    margin-top: 10rem !important;
+  }
+  .emargin {
+    margin-left: -1rem !important;
+    margin-top: 2rem !important;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+  .ptop {
+    margin-top: -10rem !important;
+  }
+  .paddingtopp {
+    padding-top: 0rem;
+    padding-bottom: 4rem;
+  }
+  .tmargin {
+    margin-top: -1rem !important;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-height: 900px) {
+  .ptop {
+    margin-top: -1rem !important;
+  }
+  .pmargin {
+    margin-top: -3rem !important;
+  }
+  .tmargin {
+    margin-top: 2rem !important;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-height: 1114px) {
+  .pmargin {
+    margin-top: -5rem !important;
+  }
+  .paddingtopp {
+    padding-top: 0rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@layer components {
+  .specific-page h1 {
+    font-size: 2.25rem; /* equiv to text-4xl */
+    font-weight: 700; /* equiv to font-bold */
+  }
+  .specific-page h2 {
+    font-size: 1.875rem; /* equiv to text-3xl */
+    font-weight: 600; /* equiv to font-semibold */
+  }
+  .specific-page h3 {
+    font-size: 1.5rem; /* equiv to text-2xl */
+    font-weight: 500; /* equiv to font-medium */
+  }
+  .specific-page h4 {
+    font-size: 1.25rem; /* equiv to text-xl */
+    font-weight: 500; /* equiv to font-medium */
+  }
+  .specific-page h5 {
+    font-size: 1.125rem; /* equiv to text-lg */
+    font-weight: 500; /* equiv to font-medium */
+  }
+  .specific-page h6 {
+    font-size: 1rem; /* equiv to text-base */
+    font-weight: 500; /* equiv to font-medium */
+  }
+}
